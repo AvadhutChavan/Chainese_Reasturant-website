@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Potta+One&diaplay=swap'); */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    /* font-family: as my choice; */
+}
+
+body{
+    background-color: aqua;
+}
+
+.container{
+    display:flex;
+  
+align-items: center;  
+justify-content: center;
+margin:1rem 18rem;
+padding:40px 47px;
+box-shadow: 10px 18px -8px #aaaaaa,-10px -10px 24px #ffffff;
+border-radius: 20px;
+height:600px;
+width: 900px;
+}
+
+
+.container img{
+    height:100%;
+    width:auto;
+    border-radius: 20px;
+}
+
+
+.about_details{
+    margin:0 45px;
+
+}
+
+
+.about_details span{
+    color:red;
+  
+
+}
+
+
+.colorchange{
+    animation:colorchangeheading 0.55s infinite;
+    
+}
+/* shades of animation for header */
+@keyframes colorchangeheading  {
+   0%{color:red;} 
+   55%{color:#bf55ec;}
+  
+    100%{color: #bf55bf;}
+
+    /* 0%{color:orange;}
+    33.9999%{color:white;}
+    100%{color:green;} */
+    
+}
+
+.about_details h2{
+    font-family:"Potta One";
+    font-weight: 100;
+    font-size: 26px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.about_details p{
+    color:gray;
+    font-size: 15px;
+}
+
+.btn{
+    margin-left:95px;
+    padding:8px 20px;
+    background-color: transparent;
+    border:1px solid red;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    color: #373837;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.btn:hover{
+    background-color: red;
+    color:#fff;
+
+}
+
+
+
+.btn_home{
+    margin-left:140px;
+    padding:8px 20px;
+    background-color: transparent;
+    border:1px solid red;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    color: #373837;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.btn_home:hover{
+    background-color: red;
+    color:#fff;
+
+}
+
+

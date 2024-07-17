@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Feedback</title>
+   
+    <style>
+        /* CSS styles here */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+           background-color:gray ;
+    
+            
+        }
+
+        .feedback-section {
+            text-align: center;
+            border:3px solid black;
+            padding:15px;
+            border-radius:15px ;
+        }
+    
+      /* Additional styles for the form and other elements */
+    </style>
+</head>
+<body>
+<section class="feedback-section" >
+    <h2 style="color:Blue; font-size:40px; border-bottom:3px solid black ;" >How Satisfied Are You With Our Services?</h2>
+    <form method="POST" action="">
+        <div class="rating">
+            
+            <input style="padding:10px; border-radius:15px;" type="text" required placeholder="Full Name" name="full_name">
+            <input style="padding:10px; border-radius:15px;" type="email" required placeholder="Your Email📧"name="email">
+            <div class="child unhappy">
+                <input style="transform: scale(2.5); " type="radio" name="rating" value="Unhappy" id="unhappy" required name="rating">
+                <label style="font-size:50px;" for="unhappy">🥲</label>
+                <h3>Unhappy</h3>
+            </div>
+            <div class="child happy">
+                <input style="transform: scale(2.5); " type="radio" name="rating" value="Happy" id="happy" required name="rating">
+                <label style="font-size:50px;" for="happy">😊</label>
+                <h3>Happy</h3>
+            </div>
+            <div class="child satisfied">
+                <input style="transform: scale(2.5); " type="radio" name="rating" value="Satisfied" id="satisfied" required name="rating">
+                <label for="satisfied" style="font-size:50px;" >😁</label>
+                <h3>Satisfied</h3>
+            </div>
+        </div>
+
+        <div class="feedback-btn">
+        <button style="padding:10px; border:3px solid black; border-radius:15px;" type="submit" id="btn">Send Review</button>
+            <button style="padding:10px; border:3px solid black; border-radius:15px;" type="submit" id="btn"><a href="homepg.html" style="text-decoration:none;">Go Home</a></button>
+        </div>
+    </form>
+</section>
+<!-- Your PHP code and HTML structure here -->
+</body>
+</html>

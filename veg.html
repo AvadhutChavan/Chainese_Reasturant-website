@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="veg.css">
+
+   <!-- custom js file link  we write js script code last of the html code -->
+   <!-- <script src="js/script.js" defer></script> -->
+
+     <style>
+      .non_veg{
+       background-color:green;
+       cursor: pointer;
+      }
+
+      .veg:hover{
+       background-color:red;
+       cursor: pointer;
+      }
+
+      .product{
+         border-radius:15px;
+         
+      }
+
+      
+
+     </style>
+
+</head>
+<body style="background-color:gray;">
+
+<h3 style="margin-top:60px;"><a class="non_veg" style=" color:#fff; margin-left:50px; text-decoration:none; font-size:25px; border:3px solid black; border-radius:15px; padding:10px; " href="#">Veg Dishes</a> 
+
+      <a  class="veg" style="color:#fff;  text-decoration:none; font-size: 25px; border:3px solid black; border-radius:15px; margin-left:35px; padding:10px;" href="Non_veg.html">Non-Veg Dishes</a> </h3>
+      <a  class="veg" style="color:#fff;  text-decoration:none; font-size: 25px; border:3px solid black; border-radius:15px; margin-left:35px; padding:10px;" href="homepg.html">Non-Veg Dishes</a> </h3>
+<div class="container">
+      
+
+   <h3 class="title"> <span style="Border-bottom:3px solid green ;">Our Pure Veg Dishes🍛🍜 </span> </h3>
+
+   <div class="products-container">
+
+      <div class="product"  data-name="p-1">
+         <img style="width:80%; border-radius: 15px;" class="noodles" src="vegimg/veg_rice.jpeg" alt="">
+         <h3>Veg Fried Rice</h3>
+         <div class="price">Half-50rs & Full-100rs</div>
+         </div>
+      
+      <div class="product" data-name="p-2">
+         <img style="width:80%; border-radius: 15px;" src="vegimg/vegsejwanrice.webp" alt="">
+         <h3>Veg sechezwan Rice</h3>
+         <div class="price">Half-60rs & Full-120rs</div>
+      </div>
+
+      <div class="product" data-name="p-3">
+         <img style="width:80%; border-radius: 15px;" src="vegimg/vegtripalrice.jpeg" alt="">
+         <h3>Veg Tripal Rice</h3>
+         <div class="price">Half-70rs & Full-140rs</div>
+      </div>
+
+      <div class="product" data-name="p-4">
+         <img style="width:80%; border-radius: 15px;" src="vegimg/vegfriednoodles.webp" alt="">
+         <h3>Veg Fried Noodles</h3>
+         <div class="price">Half-50rs & Full-100rs</div>
+      </div>
+
+      <div class="product" data-name="p-5">
+         <img style="width:80%; border-radius: 15px;" src="vegimg/vegsejwannoodles.jpeg" alt="">
+         <h3>Veg sechezwan Noodles</h3>
+         <div class="price">Half-60rs & Full-120rs</div>
+      </div>
+
+      <div class="product" data-name="p-6">
+         <img style="width:80%; border-radius: 15px;" src="vegimg/vegtripalnoodles.jpeg" alt="">
+         <h3>Veg Tripal Noodles</h3>
+         <div class="price">Half-70rs & Full-140rs</div>
+      </div>
+
+      <div class="product" data-name="p-7">
+         <img style="width:80%; border-radius: 15px;" src="vegimg/vegmanchuryscoup.jpeg" alt="">
+         <h3>Veg Manchurian Scoup</h3>
+         <div class="price">Half-30rs & Full-60rs</div>
+      </div>
+
+      <div class="product" data-name="p-8">
+         <img style="width:80%; border-radius: 15px;" src="vegimg/veghot&sourscoup.jpeg" alt="">
+         <h3>Veg Hot & Sour Scoup</h3>
+         <div class="price">Half-35rs & Full-70rs</div>
+      </div>
+
+ 
+      <div class="product" data-name="p-9">
+         <img style="width:80%; border-radius: 15px;" src="vegimg/manchowscoup2.jpeg" alt="">
+         <h3>Veg Manchow Scoup</h3>
+         <div class="price">Half-40rs & Full-80rs</div>
+      </div> 
+
+      <div class="product" data-name="p-10">
+         <img style="width:80%; border-radius: 15px;" src="vegimg/gobimanchury2.jpeg" alt="">
+         <h3>Veg Gobi Manchurian(With Gravey)</h3>
+         <div class="price">Half-50rs & Full-100rs</div>
+      </div>
+
+      <div class="product" data-name="p-11">
+         <img style="width:80%; border-radius: 15px;" src="vegimg/chainesebhel.webp" alt="">
+         <h3>Veg Chainese Bhel</h3>
+         <div class="price">Half-50rs & Full-100rs</div>
+      </div>
+
+      <div class="product" data-name="p-12">
+         <img style="width:80%; border-radius: 15px;" src="vegimg/drygobimanchury.jpeg" alt="">
+         <h3>Veg Gobi Manchurian(without Gravey)</h3>
+         <div class="price">Half-50rs & Full-100rs</div>
+      </div> 
+
+
+   </div>
+
+</div>
+
+<div class="products-preview">
+
+   <div class="preview" data-target="p-1">
+      <i class="fas fa-times"></i>
+      <img style="width:80%; border-radius: 15px;" src="vegimg/veg_rice.jpeg" alt="">
+      <h3> Veg Fried Rice</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>This Dish Includes Spicy Pure Veg Rice With Extra Fry & Sechezwan Sos😋 </p>
+      <div class="price">Half-50rs & Full-100rs</div>
+      <div class="buttons">
+         <a href="payment.html"" class="buy">Buy Now</a>
+         <a href="#" class="cart">Add To Cart</a>
+      </div>
+   </div>
+
+
+
+
+   <div class="preview" data-target="p-2">
+      <i class="fas fa-times"></i>
+      <img style="width:80%; border-radius:15px;" src="vegimg/vegsejwanrice.webp"  alt="">
+      <h3>Veg Sejwan Rice</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>This Dish Includes Spicy Pure Veg Sejwan Rice With Extra Fry & Sechezwan Sos😋</p>
+      <div class="price">Half-60rs & Full-120rs</div>
+      <div class="buttons">
+         <a href="payment.html" class="buy">Buy Now</a>
+         <a href="#" class="cart">Add To Cart</a>
+      </div>
+   </div>
+
+   <div class="preview" data-target="p-3">
+      <i class="fas fa-times"></i>
+      <img  style="width:80%; border-radius: 15px;" src="vegimg/vegtripalrice.jpeg" alt="">
+      <h3>Veg Tripal Rice</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>This Dish Includes 2 Items 1 Half Plate Rice, 1 half Scoup , Dry Noodles & Sechezwan Sos It's Value for Money😋</p>
+      <div class="price">Half-70rs & Full-140rs</div>
+      <div class="buttons">
+         <a href="payment.html" class="buy">Buy Now</a>
+         <a href="#" class="cart">Add To Cart</a>
+      </div>
+   </div>
+
+   <div class="preview" data-target="p-4">
+      <i class="fas fa-times"></i>
+      <img style="width:80%; border-radius: 15px;"  src="vegimg/vegfriednoodles.webp" alt="">
+      <h3>Veg Fried Noodles</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>This Dish Includes Pure Veg Noodles With Extra Fry & Sechezwan Sos😋</p>
+      <div class="price">Half-50rs & Full-100rs </div>
+      <div class="buttons">
+         <a href="payment.html" class="buy">Buy Now</a>
+         <a href="#" class="cart">Add To Cart</a>
+      </div>
+   </div>
+
+   <div class="preview" data-target="p-5">
+      <i class="fas fa-times"></i>
+      <img  style="width:80%; border-radius: 15px;" src="vegimg/vegsejwannoodles.jpeg" alt="">
+      <h3>Veg Sejwan Noodles</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>This Dish Includes Sejwan Noodles  With Extra Fry & Sechezewan sos😋</p>
+      <div   class="price">Half-60rs & Full-120rs</div>
+      <div class="buttons">
+         <a href="payment.html" class="buy">Buy Now</a>
+         <a href="#" class="cart">Add To Cart</a>
+      </div>
+   </div>
+
+   <div class="preview" data-target="p-6">
+      <i class="fas fa-times"></i>
+      <img style="width:80%; border-radius:15px;" src="vegimg/vegtripalnoodles.jpeg" alt="">
+      <h3>Veg Tripal Noodles</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>This Dish Includes 2 Items 1 Half Plate Noodles,1 half Scoup, Dry Noodles & Sechezewan Sos It's Value for Money😋</p>
+      <div class="price">Half-70rs & Full-140rs</div>
+      <div class="buttons">
+         <a href="payment.html" class="buy">Buy Now</a>
+         <a href="#" class="cart">Add To Cart</a>
+      </div>
+   </div>
+
+   <div class="preview" data-target="p-7">
+      <i class="fas fa-times"></i>
+      <img style="width:80%; border-radius:15px;" src="vegimg/vegmanchuryscoup.jpeg" alt="">
+      <h3>Veg Manchurian Scoup</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>This Dish Includes Spicy Scoup With Manchury Pic And Upperside Dry Noodles Layer😋</p>
+      <div class="price">Half-30rs & Full-60rs</div>
+      <div class="buttons">
+         <a href="payment.html" class="buy">Buy Now</a>
+         <a href="#" class="cart">Add To Cart</a>
+       </div>
+      </div>
+
+      <div class="preview" data-target="p-8">
+      <i class="fas fa-times"></i>
+      <img style="width:80%; border-radius:15px;" src="vegimg/hot&sorscoup.jpeg" alt="">
+      <h3>Veg Hot & Sour Scoup</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>This Dish Includes Sour Scoup With Manchurian Pic and Upperside Dry Noodles Layer😋</p>
+      <div class="price">Half-35rs & Full-70rs</div>
+      <div class="buttons">
+         <a href="payment.html" class="buy">Buy Now</a>
+         <a href="#" class="cart">Add To Cart</a>
+        </div>
+      </div>
+     
+
+      <div class="preview" data-target="p-9">
+      <i class="fas fa-times"></i>
+      <img style="width:80%; border-radius:15px;" src="vegimg/manchowscoup2.jpeg" alt="">
+      <h3>Veg manchow Scoup</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+     <p>This Dish Includes Tasty Manchow Scoup With Manchurian Pic And Upperside Dry Noodles Layer😋</p>
+      <div class="price">Half-40rs & Full-80rs</div>
+      <div class="buttons">
+         <a href="payment.html" class="buy">Buy Now</a>
+         <a href="#" class="cart">Add To Cart</a>
+      </div>
+      </div>
+
+      <div class="preview" data-target="p-10">
+      <i class="fas fa-times"></i>
+      <img style="width:80%; border-radius:15px;" src="vegimg/gobimanchury2.jpeg" alt="">
+      <h3>Gobi Manchurian(With Gravey)</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>This Dish Includes 18-20 Ball/Pic Of Manchury With Extra Gravey😋</p>
+      <div class="price">Half-50rs & Full-100rs</div>
+      <div class="buttons">
+         <a href="payment.html" class="buy">Buy Now</a>
+         <a href="#" class="cart">Add To Cart</a>
+      </div>
+      </div>
+
+      <div class="preview" data-target="p-11">
+      <i class="fas fa-times"></i>
+      <img style="width:80%; border-radius:15px;" src="vegimg/chainesebhel.webp" alt="">
+      <h3>Veg Chinese bhel</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>This Dish Includes Dry Noodles Bhel With Extra Fry😋</p>
+      <div class="price">Half-50rs & Full-100rs</div>
+      <div class="buttons">
+         <a href="payment.html" class="buy">Buy Now</a>
+         <a href="#" class="cart">Add To Cart</a>
+      </div>
+      </div>
+
+      <div class="preview" data-target="p-12">
+      <i class="fas fa-times"></i>
+      <img style="width:80%; border-radius:15px;" src="vegimg/drygobimanchury.jpeg" alt="">
+      <h3>Veg Gobi Manchurian (Without Gravey)</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div> 
+      <p>This Dish Veg Manchury 18-20 Ball/Pic Without Gravey😋</p>
+      <div class="price">Half-50 & Full-100rs</div>
+      <div class="buttons">
+         <a href="payment.html" class="buy">Buy Now</a>
+         <a href="#" class="cart">Add To Cart</a>
+      </div> 
+   </div>
+
+</div>
+
+<script>let preveiwContainer = document.querySelector('.products-preview');
+let previewBox = preveiwContainer.querySelectorAll('.preview');
+
+document.querySelectorAll('.products-container .product').forEach(product =>{
+  product.onclick = () =>{
+    preveiwContainer.style.display = 'flex';
+    let name = product.getAttribute('data-name');
+    previewBox.forEach(preview =>{
+      let target = preview.getAttribute('data-target');
+      if(name == target){
+        preview.classList.add('active');
+      }
+    });
+  };
+});
+
+previewBox.forEach(close =>{
+  close.querySelector('.fa-times').onclick = () =>{
+    close.classList.remove('active');
+    preveiwContainer.style.display = 'none';
+  };
+});</script>
+</body>
+</html>

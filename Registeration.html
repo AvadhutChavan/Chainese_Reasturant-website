@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Registeration form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <script script="showpass.js"></script>
+    
+    <link rel="stylesheet" href="registercss.css">
+    
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    
+   
+    
+</head>
+<body>
+          <div class="container">
+          	
+          	  <div class="title">
+          	  	<span class="colorchange">Registeration Form</span>
+          	  </div>
+          	  <form action="#" method="post">
+          	  <div class="form">
+          	  	  <div class="input_field">
+          	  	  		<label> First Name</label>
+                        <input type="text"  required  name="first_name"   >
+                       
+          	  	  </div>
+
+                      <div class="input_field">
+          	  	  		<label> Last Name</label>
+                        <input type="text" required name="last_name"   >
+          	  	  </div>
+
+                      <div class="input_field">
+          	  	  		<label>Phone Number</label>
+                        <input type="number" class="input" required name="phone"   >
+          	  	  </div>
+                      <div class="input_field">
+          	  	  		<label>Email</label>
+                        <input type="email" class="input" required name="email"  >
+          	  	  </div>
+                      <div class="input_field">
+          	  	  		<label>Password</label>                           
+                    <input type="password" class="input" name="password" required autocomplete="current-password"   id="id_password"  >
+                     <i class="far fa-eye" id="togglePassword" style="margin-left: -30px; cursor: pointer;"></i><br><br>
+
+          	  	  </div>
+                     
+
+                      <div class="input_field">
+                       
+          	  	  		<label>Gender</label>                      
+                        <select name="gender" id=""  required style=" padding:8px;  width:45%;  border:1px solid white; border-radius:10px;">
+                            <option value="">Select</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Other">Other</option>
+                        </select>
+                      
+          	  	  </div>
+                      <div> <br><p><u><b>Already Have An Account:-</b></u>  <a href="Sign_in.html" style="text-decoration: none; font-size: 20px;">Sign In</a></p></div>
+                       <br><br>
+                     
+                      <div>
+                      <input class="register" type="submit" value="Register" >
+                      
+                       <a href="homepg.html" > <input class="register2" type="sub" value="Cancel"></a>
+
+                       
+                      <a href="#" style="margin-left:135px;  margin-bottom:10px;" > <input class="register2" type="sub" value="Admin"></a>
+                      </div>
+                     
+                                             
+          	  	  
+          	       </div>
+              </form>
+          </div>
+          
+
+
+          <script>const togglePassword = document.querySelector('#togglePassword');
+  const password = document.querySelector('#id_password');
+
+  togglePassword.addEventListener('click', function (e) {
+    // toggle the type attribute
+    const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+    password.setAttribute('type', type);
+    // toggle the eye slash icon
+    this.classList.toggle('fa-eye-slash');
+});</script>
+
+</body>
+</html>

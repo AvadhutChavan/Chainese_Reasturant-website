@@ -1,0 +1,68 @@
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Registeration form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <!-- <script script="showpass.js"></script> -->
+    
+    <link rel="stylesheet" href="sign.css">
+    
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    
+   
+    
+</head>
+<body>
+   
+          <div class="container" style="height:35vh; margin-top:250px;">
+          	
+          	  <div class="title">
+          	  	<span class="colorchange">Sign-In Form</span>
+          	  </div>
+          	  <form action="#" method="post">
+          	  <div class="form">
+          	  	  
+                      <div class="input_field">
+          	  	  		<label>Email</label>
+                        <input type="email" class="input" required name="email"  >
+          	  	  </div>
+                      <div class="input_field">
+          	  	  		<label>Password</label>                           
+                    <input type="password" class="input" name="password" required autocomplete="current-password"   id="id_password"  >
+                     <i class="far fa-eye" id="togglePassword" style="margin-left: -30px; cursor: pointer;"></i><br><br>
+
+
+          	  	  </div><br><br>
+                                        
+                      <input class="register" type="submit" value="Sign-In">
+                       <a href="homepg.html" > <input class="register2" type="sub" value="Cancel"></a>
+                      </div>                 
+                                             
+          	  	  
+          	       </div>
+              </form>
+          </div>
+     
+
+          
+
+
+          
+          <script>const togglePassword = document.querySelector('#togglePassword');
+  const password = document.querySelector('#id_password');
+
+  togglePassword.addEventListener('click', function (e) {
+    // toggle the type attribute
+    const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+    password.setAttribute('type', type);
+    // toggle the eye slash icon
+    this.classList.toggle('fa-eye-slash');
+});</script>
+
+</body>
+</html>

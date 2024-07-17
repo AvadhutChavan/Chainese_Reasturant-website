@@ -1,0 +1,560 @@
+
+/* 
+ @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap'); */
+
+ /* @import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Rampart+One&display=swap'); */
+/* 
+ @import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Rampart+One&family=Shadows+Into+Light&display=swap');  */
+ 
+ /* @import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@500&family=Orbitron&family=Rampart+One&family=Shadows+Into+Light&display=swap');   */
+
+ 
+
+
+ *{
+    /* font-family: 'Orbitron', sans-serif; */
+    /* font-family: 'Rampart One', cursive; */
+    /* font-family: 'Shadows Into Light', cursive; */
+    /* font-family: 'Edu NSW ACT Foundation', cursive;  */
+
+    margin: 0px;
+    padding: 0px;
+    box-sizing: content-box;
+}
+body{
+    font-size: 20px;
+    overflow-x:hidden;
+}
+
+/*  this css for switch button bg color */
+.switch-btn{
+   
+	margin:0;
+    padding: 0;
+	display: flex;
+	justify-content:right;
+	align-items: right;
+	min-height:100%;
+	
+
+
+}
+
+input[type="checkbox"]{
+	-webkit-appearance:none;
+	visibility: hidden;
+	display:none;
+}
+
+.check{
+	position:relative;
+	display:inline;
+	width: 40px;
+	height:20px;
+	background:#fff;
+	cursor: pointer;
+	border-radius:5px;
+	overflow:hidden;
+	transition:ease-in 0.5s;
+    margin-left:290px;
+}
+
+
+
+
+/* the following code for header navigation bar navigation */
+
+
+
+.navbar {
+    background-color: rgb(22, 7, 36);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    line-height: 5rem;
+}
+
+.left h1 {
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+
+
+.checkBtn {
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+.checkBtn {
+    cursor: pointer;
+    font-size: 30px;
+    float: right;
+    color: #ed1e79;
+    line-height: 80px;
+}
+
+.right ul {
+    display: flex;
+    list-style: none;
+}
+
+.right ul li a {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 1s;
+}
+
+.right ul li a:hover {
+    background-color: gray;
+    border-radius: 7px;
+    color: rgb(22, 7, 36);
+}
+
+@media screen and (max-width:805px) {
+    .list {
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(22, 7, 36);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 4rem;
+        left: 100%;
+        transition: all 1s;
+    }
+
+    #check {
+        display: none;
+    }
+
+    .checkBtn {
+        display: block;
+    }
+
+    #check:checked~ul {
+        left: 0%;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ input[type="checkbox"]:checked ~ .check{
+ 	 
+   
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
+    background: black;
+ 	box-shadow: 0 0 0 1200px rgba(0,0,0,0.6);
+	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.6)), url('images/bhakri.webp');
+ }
+
+ .check:before{
+ 	content: '';
+ 	position:absolute;
+ 	top:2px;
+ 	left:2px;
+ 	background:black;
+ 	width:16px;
+ 	height:16px;
+ 	border-radius:50%;
+ 	transition:0.5s;
+ }
+
+ input[type="checkbox"]:checked ~ .check:before{
+ 	transform: translateX(-50px);
+
+ }
+
+ .check:after{
+ 	content: '';
+ 	position:absolute;
+ 	top:2px;
+ 	right:2px;
+ 	background:#fff;
+ 	width:16px;
+ 	height:16px;
+ 	border-radius:50%;
+ 	transition:0.5s;
+ 	transform:translateX(50px);
+
+ }
+
+  input[type="checkbox"]:checked ~ .check:after{
+  	transform:translateX(0px);
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+header{
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('images/bhakri.webp');
+    height:100vh;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
+    
+}
+
+.clearfix:after{
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0px;
+    clear: both;
+}
+.row{
+
+    max-width: 1180px;
+    margin:0 auto;
+
+}
+
+/* the image logo is must a transperant */
+/* .logo{ 
+    max-width: 1180px;
+    width:auto;
+    float:left;
+    margin-top:20px;
+} */
+
+.main-nav{
+    float:right;
+    margin-top: 30px;
+}
+.main-nav li{
+    display:inline-block;
+    list-style-type: none;
+    margin-left: 30px;
+   
+
+}
+
+.main-nav li a{
+   margin-right:50px;
+   padding-right:5px;
+  
+     color: #fff;
+     text-decoration: none;
+     text-transform: uppercase;
+     font-size: 90%;
+     font-weight: 100;
+}
+.main-nav li a:hover{
+    border-bottom:2px solid magenta;
+   
+}
+
+
+.main-content-header{
+    width: 1180px;
+    position:absolute;
+ 
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+h1{
+    color:#fff;
+    font-size: 150%;
+    word-spacing: 5px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: lighter;
+ 
+}
+
+
+.btn{
+    display: inline-block;
+    padding:10px 30px;
+    font-weight: lighter;
+text-decoration: none;
+text-transform: uppercase;
+border-radius: 200px;
+transition: background-color 0.2s, border 0.2s, color 0.2;
+margin-left: 30px;
+color:#bf55ec;
+}
+
+.divbtn a{
+    background-color: transparent;
+    color:#bf55ec;
+    border: 1px solid #bf55ec;
+}
+.divbtn a:hover{
+    background-color: #fff; 
+}
+
+
+.btn-full{
+    background-color: transparent;
+    color:#bf55ec;
+    margin-right:20x;
+    border: 1px solid #bf55ec;
+}
+.btn-full:hover{
+    background-color: #fff;
+}
+
+.btn-nav{
+    background-color: transparent;
+    color:#fff;
+    border: 1px solid #fff;
+    margin-right: 20px;
+}
+.btn-nav:hover{
+    background-color: #bf55ec;
+}
+
+.btn-nav3{
+    background-color: transparent;
+    color:#fff;
+    border: 1px solid #fff;
+    margin-right: 25px;
+}
+.btn-nav3:hover{
+    background-color:#bf55ec;
+}
+.btn-nav4{
+    background-color: transparent;
+    color:#fff;
+    border: 1px solid #fff;
+    font-size: 22px;
+    margin-right: 30px;
+}
+.btn-nav4:hover{
+    background-color: #bf55ec;
+}
+
+.colorchange{
+    animation:colorchangeheading 0.55s infinite;
+    
+}
+/* shades of animation for header */
+@keyframes colorchangeheading  {
+   0%{color:red;} 
+   25%{color:#bf55ec;}
+    65%{color:white;}
+    100%{color: #bf55bf;}
+
+    /* 0%{color:orange;}
+    33.9999%{color:white;}
+    100%{color:green;} */
+    
+}
+.mobile-icon{display:none}
+/*  this is responsive query */
+@media only screen and (max-width:1180px){
+    .main-content-header{
+        width: 100%;
+        padding:0px 2px;
+    }
+}
+
+
+@media only screen and (max-width:998px){
+    h1{
+        font-size: 200%;
+    }
+}
+@media only screen and (max-width:768px){
+    h1{
+        font-size: 180%;
+    }
+    .main-nav{
+        display:none;
+    }
+.mobile-icon{
+    display:inline-block;
+    color:orange;
+    /* float: right; */
+    margin-top:30px;
+    margin-right:20px;
+   }
+   .main-nav{
+    float:right ;
+   }
+  .main-nav li{
+    /* float:left; */
+    display:block;
+    margin-top:10px;
+  }
+}
+ @media only screen and (max-width: 480px){
+    .animated{
+        margin-bottom:20px;
+    }
+   h1{font-size: 160%;}
+ 
+}
+
+/*  this below css code for the footer */
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+.container{
+	max-width: 1170px;
+	/* margin:auto; */
+    margin-left: 200px;
+    margin-bottom:10px;
+}
+.row{
+	display: flex; 
+    
+    /* this comment for in single line the header elements  */
+	/* flex-wrap: wrap; */
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 40px 0;
+    
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+   
+   /* border-left:2px dotted red; */
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+
+
+
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -11px;
+	background-color: red;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 50px;
+    
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: darkred;
+  
+}
+
+
+.whatsappimg{
+    
+    border-radius: 50%;
+    width: 100%;
+    
+    
+    
+
+}
+
+.whatsappimg:hover{
+    border:1px dotted black;
+    
+}
+ .social-links a{
+    display:inline-block;
+    
+    text-decoration: none;
+    
+
+ }
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
+
+
